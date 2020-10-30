@@ -32,9 +32,12 @@ print("All the apples gathered today " + str(basket_of_apples))
 
 "Use  get, add, remove elements for list structures"
 
+# get
+print(basket_of_apples.get("strange apple"))
+
+# add
+basket_of_fruits.append('avocado')
+
+# remove
 basket_of_fruits.remove('cherry')
 print('the cherry did not survive ' + str(basket_of_fruits))
-
-
-basket_of_fruits.insert(7, 'avocado')
-print(basket_of_fruits)
