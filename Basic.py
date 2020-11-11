@@ -8,6 +8,7 @@ try:
     float_variable = 5.3
     string_variable = "I'am string"
     print(int_variable == float_variable, int_variable == string_variable, float_variable == string_variable)
+    # the 'long' and 'double' variables are not represented in Python 3
 
 
     " · Don't assign any values and compare variables."
@@ -28,6 +29,7 @@ try:
     float_variable4 = 0.5, 0.7, 1.0, 0.1
     float_variable5 = 0.5, 0.7, 1.0, 0.1
     print(float_variable4 == float_variable5)
+    # instead of variable with double used variable with float
 
 
 
@@ -48,7 +50,7 @@ except:
 finally:
 
     '· Divide values by 3 and assign result to a variable.'
-    float_variable7 = [0.5, 0.7, 1.0, 0.1]
+    float_variable7 = [10, 3, 53, 15]
     result7 = None
 
     for i in float_variable7:
@@ -61,12 +63,13 @@ finally:
 
 
     '· Divide values by 3.0 and assign result and make a round operation.'
-    float_variable8 = [0.5, 0.7, 1.0, 0.1]
+    float_variable8 = [13, 40, 33, 15]
     result8 = None
 
     for i in float_variable8:
         if float_variable8:
-            result8 = i / 3
+            result8 = i / 3.0
             print(round(result8))
     "function 'round()' which rounds off to the given number of digits and returns the floating point number, " \
-    "if no number of digits is provided for round off , it rounds off the number to the nearest integer."
+    "if no number of digits is provided for round off , it rounds off the number to the nearest integer." \
+    "result also can be rounded down by using the floor division operator: '//' "
