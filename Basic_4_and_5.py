@@ -40,7 +40,7 @@ basket_of_apples["yellow apple"]
 # add
 "list"
 basket_of_fruits.append('avocado')
-basket_of_fruits.extend('more avocados')
+basket_of_fruits.extend(basket_of_apples)
 basket_of_fruits.insert(7, 'pineapple')
 basket_of_fruits[2] = 'better banana'
 "dict"

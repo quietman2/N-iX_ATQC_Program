@@ -9,9 +9,14 @@ boolN1 = True
 boolN2 = True
 boolN3 = False
 boolN4 = False
-
 boolNresult = boolN1 == boolN2 == boolN3 == boolN4
-print("Result of comparing boolean variables is " + str(boolNresult))
+
+if boolNresult == True:
+    print("Result of comparing boolean variables is " + str(boolNresult))
+elif boolNresult == False:
+    print("Result of comparing boolean variables is " + str(boolNresult))
+else:
+    print("Something went wrong")
 
 
 " · Create 4 different numeric variables and compare them with the usage of <, <=, !=, ==, ===, >=, >. " \
