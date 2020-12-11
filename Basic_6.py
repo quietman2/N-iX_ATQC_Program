@@ -1,5 +1,6 @@
 import pickle
 import json
+import re
 
 "Below is the 6th task from the Basic"
 from typing import List, Any
@@ -104,11 +105,8 @@ print(strange_string.replace("w", "W", 1))
 
 # · Create string "this item previous price $5.99, Sale price $1.99" - parse original and sale price from string and print them.
 strange_string2 = "this item previous price $5.99, Sale price $1.99"
+textlookfor = r"[$]\d+\.\d+"
+allfound = re.findall(textlookfor, strange_string2)
 
-original_price = ''
-sale_price = ''
-for i in strange_string2:
-    if i.isdigit():
-        original_price += i
-        sale_price += i
-print(sale_price, original_price)
+print('Original price is: ' + allfound[0])
+print('Current price is: ' + allfound[1])
